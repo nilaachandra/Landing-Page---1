@@ -108,3 +108,14 @@ body{
     font-weight: 600;
     opacity: .6;
 }
+@media(max-width: 600px){
+    #main{
+        flex-direction: column;
+    }
+    #main #left{
+        width: 100%;
+    }
+    #main #right{
+        width: 100%
+    };
+}
