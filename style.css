@@ -16,12 +16,96 @@ body{
     width: 100%;
 }
 #main{
-    width: 100%;
-    height: 100%;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
     background-color: red;
 }
 #left{
-    width: 45%;
+    width: 40%;
     height: 100%;
     background-color: yellow;
+    position: relative;
+}
+#right{
+    width: 60%;
+    height: 100%;
+    background-color: white;
+}
+#rtop{
+    width: 100%;
+    height: 50%;
+    background-color: rgb(215, 215, 215);
+    display: flex;
+}
+#rbot{
+    width: 100%;
+    height: 50%;
+    background-color: aquamarine;
+}
+#rtopleft{
+    width: 55%;
+    height: 100%;
+    background: royalblue;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+#rtopleft img{
+    height: 75%;
+    width: 75%;
+}
+#rtopright{
+    width: 45%;
+    height: 100%;
+    background-color: green;
+}
+
+#lnav{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#lnavr{
+    display: flex;
+    align-items: center;
+}
+#lnavr i{
+    color: blue;
+}
+#lnavr a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+}
+#left #textcenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#textcenter h1{
+    font-size: 90px;
+    font-weight: 900;
+}
+#textcenter p{
+    opacity: .6;
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#textcenter a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    opacity: .6;
 }
