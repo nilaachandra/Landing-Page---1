@@ -13,17 +13,28 @@ html{
 body{
     height: 100%;
     width: 100%;
+    color: black;
+    background-color: white;
+}
+a{
+    color: black;
+}
+.darkmode{
+    color: white;
+    background-color: black;
+}
+a.darkmode{
+    color: white;
+    background-color: black;
 }
 #main{
     display: flex;
     width: 100vw;
     height: 100vh;
-    background-color: red;
 }
 #left{
     width: 40%;
     height: 100%;
-    background-color: white;
     position: relative;
 }
 #right{
@@ -67,18 +78,17 @@ body{
     display: flex;
     justify-content: space-between;
 }
+
 #lnavr{
     display: flex;
     align-items: center;
 }
 #lnavr i{
-    color: black;
     font-size: 2rem;
 }
 #lnavr a{
     margin-right: 20px;
     text-decoration: none;
-    color: black;
     font-size: 16px;
     font-weight: 500;
 }
@@ -92,13 +102,13 @@ body{
 .textcenter h1{
     font-size: 90px;
     font-weight: bolder;
+    margin-top: 15px;
     color: orange;
 }
 .textcenter p{
     font-size: 16px;
-    line-height: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 .textcenter a{
     text-decoration: none;
@@ -108,18 +118,7 @@ body{
     font-size: 13px;
     font-weight: 600;
 }
-.textcenter .theText{
-    padding-top: 16px;
-    font-size: 16px;
-    line-height: 20px;
-    transition: .6s;
-    height: 97px;
-    overflow: hidden;
-}
-.textcenter .theText.active{
-    height: 220px;
-    transition: 0.6s;
-}
+
 
 @media(max-width: 600px){
     #main{

@@ -1,6 +1,21 @@
-const revealTxt = document.getElementById('revealTxt');
-const hiddenTxt = document.querySelector('.theText')
+document.addEventListener('DOMContentLoaded', function() {
+    const themeToggle = document.getElementById('theme');
+    const darkElements = document.querySelectorAll('.dark');
 
-revealTxt.addEventListener('click', function() {
-    hiddenTxt.classList.toggle('active');
-})
+    themeToggle.addEventListener('click', function() {
+        document.body.classList.toggle('darkmode');
+
+        // Toggle the moon and sun icons
+        if (document.body.classList.contains('darkmode')) {
+            themeToggle.classList.remove('fa-sun');
+            themeToggle.classList.add('fa-moon');
+        } else {
+            themeToggle.classList.remove('fa-moon');
+            themeToggle.classList.add('fa-sun');
+        }
+
+        darkElements.forEach((d) => {
+            d.classList.toggle('darkmode');
+        });
+    });
+});
