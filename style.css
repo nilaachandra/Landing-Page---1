@@ -87,6 +87,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    padding: 20px;
 }
 .textcenter h1{
     font-size: 90px;
@@ -112,11 +113,11 @@ body{
     font-size: 16px;
     line-height: 20px;
     transition: .6s;
-    height: 100px;
+    height: 97px;
     overflow: hidden;
 }
 .textcenter .theText.active{
-    height: 200px;
+    height: 220px;
     transition: 0.6s;
 }
 
