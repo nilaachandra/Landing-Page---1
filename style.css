@@ -78,6 +78,10 @@ a.darkmode{
     display: flex;
     justify-content: space-between;
 }
+.active{
+    border-bottom: 1px solid black;
+
+}
 
 #lnavr{
     display: flex;
@@ -113,7 +117,7 @@ a.darkmode{
 .textcenter a{
     text-decoration: none;
     color: black;
-    border-bottom: 1px solid black;
+
     padding-bottom: 5px;
     font-size: 13px;
     font-weight: 600;

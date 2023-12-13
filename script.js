@@ -2,6 +2,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const themeToggle = document.getElementById('theme');
     const darkElements = document.querySelectorAll('.dark');
 
+    // const activePage = window.location.pathname;
+    // darkElements.forEach(link => {
+    //   if(link.href.includes(`${activePage}`)){
+    //     link.classList.add('active');
+    //     console.log(link);
+    //   }
+    // })
+
+
     themeToggle.addEventListener('click', function() {
         document.body.classList.toggle('darkmode');
 
