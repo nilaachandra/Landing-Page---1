@@ -40,9 +40,9 @@ body{
 #rbot{
     width: 100%;
     height: 50%;
-    background: url(https://media.istockphoto.com/id/1016958538/photo/ripe-pineapple-fruit.jpg?s=612x612&w=0&k=20&c=xsu-rGA4W0aRuS_NnDK8ZfADPEegyzQ-pBiQPb-fiQk=);
-    background-position: top;
-    background-size: contain;
+    background: url(https://media.istockphoto.com/id/474292036/photo/fresh-ripe-pineapples-for-sale.jpg?s=612x612&w=0&k=20&c=NqoZLXKzHBZfis5H8W4M36416JGyT2_hTBd-fCF0sLc=);
+    background-position: center;
+    background-size: cover;
 }
 #rtopleft{
     width: 55%;
@@ -72,7 +72,8 @@ body{
     align-items: center;
 }
 #lnavr i{
-    color: blue;
+    color: black;
+    font-size: 2rem;
 }
 #lnavr a{
     margin-right: 20px;
@@ -81,24 +82,24 @@ body{
     font-size: 16px;
     font-weight: 500;
 }
-#left #textcenter{
+#left .textcenter{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
-#textcenter h1{
+.textcenter h1{
     font-size: 90px;
     font-weight: bolder;
     color: orange;
 }
-#textcenter p{
+.textcenter p{
     font-size: 16px;
     line-height: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
-#textcenter a{
+.textcenter a{
     text-decoration: none;
     color: black;
     border-bottom: 1px solid black;
@@ -106,6 +107,19 @@ body{
     font-size: 13px;
     font-weight: 600;
 }
+.textcenter .theText{
+    padding-top: 16px;
+    font-size: 16px;
+    line-height: 20px;
+    transition: .6s;
+    height: 100px;
+    overflow: hidden;
+}
+.textcenter .theText.active{
+    height: 200px;
+    transition: 0.6s;
+}
+
 @media(max-width: 600px){
     #main{
         flex-direction: column;
